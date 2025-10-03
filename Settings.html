@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Your Future - Paramètres</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques pour la page Paramètres */
+        .settings-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background: linear-gradient(120deg, #4caf50, #2196f3);
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .settings-container label {
+            font-weight: bold;
+        }
+
+        .settings-container select, .settings-container button {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .settings-container button {
+            background-color: #ffeb3b;
+            color: #222;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .settings-container button:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SYF</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="products.html">Produits</a>
+            <a href="cart.html">Panier</a>
+            <a href="chat.html">Discussion IA</a>
+            <a href="settings.html">Paramètres</a>
+        </nav>
+    </header>
+
+    <section class="settings">
+        <div class="settings-container">
+            <h2>Paramètres du compte</h2>
+
+            <label for="langue">Choisir la langue :</label>
+            <select id="langue">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+
+            <button onclick="deconnexion()">Déconnexion</button>
+
+            <label for="notifications">Notifications :</label>
+            <select id="notifications">
+                <option value="on">Activées</option>
+                <option value="off">Désactivées</option>
+            </select>
+
+            <button onclick="alert('Sauvegardé !')">Sauvegarder les paramètres</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Save Your Future. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
